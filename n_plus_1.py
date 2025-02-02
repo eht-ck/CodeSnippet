@@ -6,4 +6,4 @@ for user in users:
 # select_related()
 users = User.objects.select_related('orders').all()  # 1 Query
 # prefetch_related()
-users = User.objects.prefetch_related('orders').all()  # 2 Queries (Optimized)
+users = User.objects.prefetch_related('orders').all()  # 2 Queries 
